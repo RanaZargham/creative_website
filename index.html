@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Creative Design Studio</title>
+  <style>
+    body {font-family: Arial, sans-serif; margin:0; padding:0; background:#f9f9f9; color:#333;}
+    header {background:#222; color:#fff; padding:20px 40px; position:sticky; top:0; display:flex; justify-content:space-between; align-items:center;}
+    header h1 {margin:0; font-size:24px;}
+    nav a {color:#fff; margin-left:20px; text-decoration:none; font-weight:bold;}
+    nav a:hover {text-decoration:underline;}
+    section {max-width:900px; margin:40px auto; padding:0 20px;}
+    h2 {color:#222; border-bottom: 2px solid #007BFF; padding-bottom:5px;}
+    .gallery {display:flex; flex-wrap:wrap; gap:15px; justify-content:center; margin-top:20px;}
+    .gallery img {width:250px; height:160px; object-fit:cover; border-radius:8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);}
+    form {display:flex; flex-direction:column; gap:12px; max-width:400px;}
+    input, textarea {padding:10px; font-size:16px; border:1px solid #ccc; border-radius:5px; resize:none;}
+    button {background:#007BFF; color:#fff; border:none; padding:12px; font-size:16px; border-radius:5px; cursor:pointer;}
+    button:hover {background:#0056b3;}
+    footer {text-align:center; padding:20px 10px; background:#222; color:#fff; margin-top:40px;}
+  </style>
+</head>
+<body>
+<header>
+  <h1>Creative Design Studio</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#photos">Photos</a>
+    <a href="#logos">Logos</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>We specialize in creative photography and professional logo design. Our mission is to bring your vision to life with stunning visuals and unique branding.</p>
+</section>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <ul>
+    <li>Custom Photography for events, portraits, and products.</li>
+    <li>Logo design tailored to your brand identity.</li>
+    <li>Brand consultation and creative direction.</li>
+  </ul>
+</section>
+
+<section id="photos">
+  <h2>Photo Gallery</h2>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Mountain View" />
+    <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=400&q=80" alt="City Skyline" />
+    <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=400&q=80" alt="Beach Sunset" />
+    <img src="https://images.unsplash.com/photo-1486308510493-cb42f7f7a89f?auto=format&fit=crop&w=400&q=80" alt="Forest Path" />
+    <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=400&q=80" alt="Desert Dunes" />
+  </div>
+</section>
+
+<section id="logos">
+  <h2>Logo Gallery</h2>
+  <div class="gallery">
+    <img src="https://dummyimage.com/400x160/007BFF/fff&text=Logo+1" alt="Logo 1" />
+    <img src="https://dummyimage.com/400x160/f44336/fff&text=Logo+2" alt="Logo 2" />
+    <img src="https://dummyimage.com/400x160/4CAF50/fff&text=Logo+3" alt="Logo 3" />
+    <img src="https://dummyimage.com/400x160/FF9800/fff&text=Logo+4" alt="Logo 4" />
+    <img src="https://dummyimage.com/400x160/9C27B0/fff&text=Logo+5" alt="Logo 5" />
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form action="https://formsubmit.co/ranazargam12@gmali.com" method="POST">
+    <input type="hidden" name="_captcha" value="false" />
+    <label for="name">Name *</label>
+    <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+    <label for="email">Email *</label>
+    <input type="email" id="email" name="email" placeholder="your.email@example.com" required />
+
+    <label for="message">Message *</label>
+    <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2025 Creative Design Studio. All rights reserved.
+</footer>
+</body>
+</html>
